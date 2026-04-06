@@ -24,13 +24,13 @@ from torch.utils.data import DataLoader, TensorDataset
 import os
 
 # How many past days we will look at to predict the next day.
-SEQUENCE_LENGTH = 30
+SEQUENCE_LENGTH = 12
 
 # How many sequences are grouped together and passed through the model at one time.
 BATCH_SIZE = 32
 
 # How many full passes of the dataset the model will make.
-EPOCHS = 20
+EPOCHS = 50
 
 # How many memory units are inside each LSTM layer.
 # More => model can learn more complex patterns, but takes longer to train.
